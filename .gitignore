@@ -1,4 +1,4 @@
-.htaccess
+app/.htaccess
 /config.php
 admin/config.php
 
@@ -23,3 +23,5 @@ vqmod/mods.cache
 /dist/
 /.git/
 /package-lock.json
+/package.json
+/gulpfile.js
