@@ -23,5 +23,5 @@ vqmod/mods.cache
 /dist/
 /.git/
 /package-lock.json
-/package.json
-/gulpfile.js
+package.json
+gulpfile.js
