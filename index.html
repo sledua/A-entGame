@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+		4916 9851 0046 4970
+	<div id="app">
+		<h1>String: {{ massage }}</h1>
+		<h1>Sum: {{ 3+2 }}</h1>
+		<input type="text" v-model="massage">
+
+		<pre>{{ $data | json }}</pre>
+
+		<div class="student">
+			<h1>{{ sayHello() }}</h1>
+			<h2>IF Statmant: {{ isStydent ? 'Im stydent' : 'Im not a stydent' }}</h2>
+			<h2>Functions: {{ string.split('').reverse().join('') }}</h2>
+		</div>
+	</div>
+
+	<!--<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>-->
+	<script>
+		let x = 7;
+		let y = 7;
+		console.log('x= ',x);
+		console.log('y= ',y);
+		x<=8;
+		y==8;
+		console.log('x= ',x);
+		console.log('y= ',y);
+	</script>
+	<!--<script>
+		
+	new Vue({
+		el: '#app',
+		data: {
+			massage: 'Артемка',
+			isStydent: true,
+			name: 'Артемка',
+			string: 'My name is Artemka'
+		},
+		methods: {
+			sayHello: function() {
+				return 'Hello my name is ' + this.name
+			}
+		}
+	});
+	</script>-->
+</body>
+</html>
