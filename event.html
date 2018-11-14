@@ -9,7 +9,10 @@
 <body>
 	<div id="app">
 		<h2 @mouseover="onHover">Счетчик: {{ counter }}</h2>
+		<h2 @mouseover="onHover">{{ title }}: {{ counter }}</h2>
 		<button v-on:click="addCounter">+</button>
+		<button v-on:click="addCounterMore(5, 'Изменено на 5', $event)">+5</button>
+		<button v-on:click="addCounterMore(10, 'изменено на 10', $event)">+10</button>
 		<button @click="counter--">-</button>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
@@ -17,11 +20,23 @@
 	new Vue({
 		el: '#app',
 		data:{
-			counter: 0
+			counter: 0,
+			title: 'Счетчик'
 		},
 		methods: {
 			addCounter: function(){
 				this.counter++
+			},
+			addCounterMore: function(num,str,event){
+				this.counter += num
+				this.title = str
+				if(num === 5){
+					//green
+					event.target.style.color = 'green'
+				}else if(num === 10){
+					//#333
+					event.target.style.color = 'blue'
+				}
 			},
 			onHover: function(event){
 			event.target.style.color = 'red'
