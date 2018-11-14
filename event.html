@@ -11,9 +11,20 @@
 		<h2 @mouseover="onHover">Счетчик: {{ counter }}</h2>
 		<h2 @mouseover="onHover">{{ title }}: {{ counter }}</h2>
 		<button v-on:click="addCounter">+</button>
-		<button v-on:click="addCounterMore(5, 'Изменено на 5', $event)">+5</button>
-		<button v-on:click="addCounterMore(10, 'изменено на 10', $event)">+10</button>
+		<button @click="addCounterMore(5, 'Изменено на 5', $event)">+5</button>
+		<button @click.once="addCounterMore(10, 'изменено на 10', $event)">+10</button>
 		<button @click="counter--">-</button>
+		<hr>
+		<h2><a href="https://google.com" target="_blank" @click="clickOnGoogle">Link</a></h2>
+		<h2><a href="https://google.com" target="_blank" @click.prevent>Link</a></h2>
+		<h2><a href="https://google.com" target="_blank">Link</a></h2>
+		<!--
+			.stop - stopPropagetion()
+			.prevent - pteventDefault()
+			.capture
+			.self
+			.once
+		-->
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
 	<script>
@@ -41,6 +52,9 @@
 			onHover: function(event){
 			event.target.style.color = 'red'
 			
+			},
+			clickOnGoogle: function(event){
+				event.preventDefault()
 			}
 		}
 	});
