@@ -18,12 +18,14 @@
 		<h2><a href="https://google.com" target="_blank" @click="clickOnGoogle">Link</a></h2>
 		<h2><a href="https://google.com" target="_blank" @click.prevent>Link</a></h2>
 		<h2><a href="https://google.com" target="_blank">Link</a></h2>
+		<div @scroll.passive="onScroll"></div>
 		<!--
 			.stop - stopPropagetion()
 			.prevent - pteventDefault()
 			.capture
 			.self
 			.once
+			.passive
 		-->
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
