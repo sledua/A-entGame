@@ -1,0 +1,7 @@
+.header {
+	width: calc(100% - #{$sidebar-widh});
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: $z-index-header;
+}

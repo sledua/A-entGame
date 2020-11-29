@@ -1,0 +1,9 @@
+.sidebar {
+	width: $sidebar-widh;
+	height: 100vh;
+	background-color: darken($primary, 2);
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: $z-index-sidebar;
+}
