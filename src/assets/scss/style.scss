@@ -6,6 +6,7 @@ html {
 body {
     background-color: darken($white, 5);
 		font-size: 1.6rem;
+		line-height: 1.6;
 		color: $secondary;
 		font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
@@ -20,6 +21,12 @@ body {
 @import 'blocks/header';
 /* sidebar */
 @import 'blocks/sidebar';
+/* btn */
+@import 'blocks/btn';
+/* social */
+@import 'blocks/social';
+/* profile */
+@import 'blocks/profile';
 /* main */
 @import 'blocks/main';
 /* container */

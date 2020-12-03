@@ -198,8 +198,8 @@ function jsWatch(cb) {
 function images(cb) {
     return src(path.src.images)
         .pipe(imagemin([
-            imagemin.gifsicle({interlaced: true}),
-            imagemin.mozjpeg({quality: 95, progressive: true}),
+            //imagemin.gifsicle({interlaced: true}),
+            //imagemin.mozjpeg({quality: 95, progressive: true}),
             imagemin.optipng({optimizationLevel: 5}),
             imagemin.svgo({
                 plugins: [
