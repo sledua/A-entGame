@@ -1,19 +1,29 @@
 <header class="header">
 	<div class="header__left">
 		<nav class="nav">
-			<ul>
-				<li><a href="#">Главная</a></li>
+			<ul class="nav__list">
+				<li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+				<li class="nav__item"><a href="#" class="nav__link has-subnav">Статьи</a>
+				<ul class="subnav">
+					<li><a class="subnav__link" href="">Create lorem</a></li>
+					<li><a class="subnav__link" href="">Torondeter form</a></li>
+					<li><a class="subnav__link" href="">Trotless less</a></li>
+				</ul>
+				</li>
+				<li class="nav__item"><a href="#" class="nav__link">Кто я</a></li>
+				<li class="nav__item"><a href="#" class="nav__link">Реклама</a></li>
 			</ul>
 		</nav>
 	</div>
 	<div class="header__right">
 		<nav class="nav">
-			<ul>
-				<li><a href="#">Профиль</a></li>
+			<ul class="nav__list">
+				<li class="nav__item"><a href="#" class="nav__link">Профиль</a></li>
+				<li class="nav__item"><a href="#" class="nav__link">Вихід</a></li>
 			</ul>
 		</nav>
-		<form action="/" method="post">
-			<input type="text">
+		<form action="/" method="post" class="search" >
+			<input type="text" placeholder="Search or" class="search__input">
 		</form>
 	</div>
 </header>
